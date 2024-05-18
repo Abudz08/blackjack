@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <input type="name" id="player-el" placeholder="Player Name"><br>
+        <input type="number" id="bet-el" placeholder="$bet (min: 100)" min="100"><br>
+        <button id="submit-btn" onclick="submit()">SUBMIT</button>
+        
+        <p id="greeting-el"></p>
+        <h1>BLACKJACK!</h1>
+        <div class="cards">
+            <a>Your Cards:</a>
+            <a id="card-el"></a><br>
+            <a>Total:</a>
+            <a id="total-el"></a><br>
+            <a id="result-el"></a><br>
+        </div>
+
+        <button id="start-btn" onclick="startGame()">START GAME (-$50)</button>
+        <button id="getcard-btn" onclick="getCard()">GET CARD (-$10)</button>
+        <button id="reset-btn" onclick="reset()">NEW GAME</button><br><br>
+
+        
+        <p id="player-name">Player Name</p>
+        <p id="bet-amount">Cash Amount</p>
+
+        <input type="number" id="addbet-el" placeholder="$addbet (min: 100)" min="100">
+        <button id="addbet-btn" onclick="addbet()">TOP UP</button>
+
+    </div>
+    
+    
+    <hr>
+    <a href="https://abudz08.github.io/agentxkillua/">Go Back to Home Page</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
